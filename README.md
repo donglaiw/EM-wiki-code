@@ -20,13 +20,13 @@ list of connectomics packages in [Harvard Visual Computing Group](https://vcg.se
     <td>deflicker, destripe, interpolation</td>
     <td><a href="https://github.com/donglaiw/EM-preprocess">code</a></td>
   </tr>
-    <tr>
-    <td rowspan=2>image->segment</td>
+  <tr>
+    <td rowspan=3>image->segment</td>
     <td> affinity prediction</td>
     <td>pytorch unet</td>
     <td><a href="https://github.com/donglaiw/EM-pytorch">code</a></td>
   </tr>    
-    <tr>
+  <tr>
     <td>watershed</td>
     <td>affinity-based watershed</td>
     <td><ul>
@@ -39,6 +39,12 @@ list of connectomics packages in [Harvard Visual Computing Group](https://vcg.se
         </ul>
       </td>
   </tr>
+  <tr>
+    <td> cell segmentation</td>
+    <td>traditional tricks</td>
+    <td><a href="https://github.com/donglaiw/EM-cell">code</a></td>
+  </tr>    
+
   <tr>
     <td rowspan=3>segment</td>
     <td> segment stitch</td>
@@ -76,6 +82,30 @@ list of connectomics packages in [Harvard Visual Computing Group](https://vcg.se
     <tr>
     <td>Cell type</td>
     <td></td>
+    <td></td>
+    <td><a href="">code</a></td>  
+    <tr>
+  </tr>
+</table>
+
+## Infrastructure
+<table>
+  <tr>
+    <td>Category</td>
+    <td>Task</td>
+    <td>Description</td>
+    <td>Resource</td>
+  </tr>  
+  <tr>
+    <td>Data</td>
+    <td></td>
+    <tr>
+  </tr>
+    <tr>
+      <td>Computation</td>
+      <td>task manager</td>
+      <td>Luigi pipeline</td>
+      <td><a href="https://github.com/microns-ariadne/pipeline_engine">code</a></td>
     <tr>
   </tr>
 </table>
