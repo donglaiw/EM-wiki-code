@@ -1,5 +1,5 @@
 # EM-code
-list of packages used in VCG connectomics group
+list of connectomics packages in [Harvard Visual Computing Group](https://vcg.seas.harvard.edu) 
 
 ## Segmentation
 <table>
