@@ -21,7 +21,7 @@ list of connectomics packages in [Harvard Visual Computing Group](https://vcg.se
     <td><a href="https://github.com/donglaiw/EM-preprocess">code</a></td>
   </tr>
   <tr>
-    <td rowspan=3>image->segment</td>
+    <td rowspan=2>image->segment</td>
     <td> affinity prediction</td>
     <td>pytorch unet</td>
     <td><a href="https://github.com/donglaiw/EM-pytorch">code</a></td>
@@ -39,12 +39,6 @@ list of connectomics packages in [Harvard Visual Computing Group](https://vcg.se
         </ul>
       </td>
   </tr>
-  <tr>
-    <td> cell segmentation</td>
-    <td>traditional tricks</td>
-    <td><a href="https://github.com/donglaiw/EM-cell">code</a></td>
-  </tr>    
-
   <tr>
     <td rowspan=3>segment</td>
     <td> segment stitch</td>
@@ -75,16 +69,29 @@ list of connectomics packages in [Harvard Visual Computing Group](https://vcg.se
     <td>Resource</td>
   </tr>  
   <tr>
-    <td>Synapse</td>
-    <td>prediction, analysis</td>
-    <tr>
+    <td rowspan=3>Synapse</td>
+    <td>3D segmentation</td>
   </tr>
-    <tr>
-    <td>Cell type</td>
-    <td></td>
-    <td></td>
+  <tr>
+    <td>categorization</td>
+    <td>predict E/I type, cluster morphology</td>
+  </tr>    
+  <tr>
+    <td>annotation</td>
+    <td>binary questions with neuroglancer</td>
+    <td><a href="https://github.com/microns-ariadne/synapse_reviewer">code</a></td>
+  </tr>    
+   <tr>
+    <td rowspan=2>Cell</td>
+    <td>segmentation</td>
+    <td>traditional tricks</td>
+    <td><a href="https://github.com/donglaiw/EM-cell">code</a></td>
+  </tr> 
+  <tr>
+    <td>categorization</td>
+         <td></td>
     <td><a href="">code</a></td>  
-    <tr>
+    </tr>
   </tr>
 </table>
 
@@ -98,14 +105,19 @@ list of connectomics packages in [Harvard Visual Computing Group](https://vcg.se
   </tr>  
   <tr>
     <td>Data</td>
-    <td></td>
+    <td>server</td>
+    <td>butterfly</td>
+    <td><a href="https://github.com/Rhoana/butterfly">code</a></td>
     <tr>
   </tr>
     <tr>
-      <td>Computation</td>
-      <td>task manager</td>
-      <td>Luigi pipeline</td>
+      <td rowspan=2>Computation</td>
+      <td rowspan=2>pipeline</td>
+      <td>luigi-based for deployment</td>
       <td><a href="https://github.com/microns-ariadne/pipeline_engine">code</a></td>
+    </tr>
     <tr>
-  </tr>
+        <td>scipts for development</td>
+        <td><a href="https://github.com/donglaiw/EM-pipeline">code</a></td>
+    <tr>
 </table>
