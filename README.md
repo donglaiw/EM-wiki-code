@@ -58,8 +58,6 @@ list of connectomics packages in [Harvard Visual Computing Group](https://vcg.se
   </tr>    
 </table>
 
-## Proofread+Visualization
-
 ## Application
 <table>
   <tr>
@@ -121,3 +119,5 @@ list of connectomics packages in [Harvard Visual Computing Group](https://vcg.se
         <td><a href="https://github.com/donglaiw/EM-pipeline">code</a></td>
     <tr>
 </table>
+
+## Proofread+Visualization
