@@ -69,6 +69,8 @@ list of connectomics packages in [Harvard Visual Computing Group](https://vcg.se
   <tr>
     <td rowspan=3>Synapse</td>
     <td>3D segmentation</td>
+    <td></td>
+    <td><a href="https://github.com/zudi-lin/synapse-unet">code</a></td>
   </tr>
   <tr>
     <td>categorization</td>
