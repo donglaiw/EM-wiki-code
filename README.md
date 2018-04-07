@@ -85,7 +85,7 @@ list of connectomics packages in [Harvard Visual Computing Group](https://vcg.se
     <td rowspan=2>Cell</td>
     <td>segmentation</td>
     <td>traditional filter-based tricks</td>
-    <td><a href="https://github.com/donglaiw/EM-cell">code</a></td>
+    <td><a href="https://github.com/donglaiw/EM-cellLib">code</a></td>
   </tr> 
   <tr>
     <td>categorization</td>
