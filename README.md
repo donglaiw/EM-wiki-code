@@ -91,8 +91,14 @@ list of connectomics packages in [Harvard Visual Computing Group](https://vcg.se
     <td>categorization</td>
          <td></td>
     <td><a href="">code</a></td>  
-    </tr>
   </tr>
+  
+   <tr>
+    <td>Mitochondria</td>
+    <td>segmentation</td>
+    <td>2D U-Net</td>
+    <td><a href="https://github.com/VCG/vincent">code</a></td>
+  </tr> 
 </table>
 
 ## Infrastructure
