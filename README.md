@@ -24,7 +24,7 @@ list of connectomics packages in [Harvard Visual Computing Group](https://vcg.se
     <td rowspan=2>image->segment</td>
     <td> affinity prediction</td>
     <td>pytorch unet</td>
-    <td><a href="https://github.com/donglaiw/EM-pytorch">code</a></td>
+    <td><a href="https://github.com/donglaiw/EM-affinity">code</a></td>
   </tr>    
   <tr>
     <td>watershed</td>
