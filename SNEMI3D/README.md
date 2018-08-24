@@ -15,7 +15,7 @@ chmod +x ./install_snemi3d.sh
 ## 2. Pipeline
 ### 2.1 Image Deflickering
 ```
-python do_snemi3d.py 1 INPUT_IMAGE_STACK DEFLICKER_IMAGE_STACK
+python do_snemi3d.py 1 train-data.tiff train-data-df.tiff
 ```
 
 ### 2.2. Affinity Prediction 
