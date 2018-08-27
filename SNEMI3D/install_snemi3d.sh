@@ -15,7 +15,7 @@ cur_path=`pwd`
 
 # 2. setup environment
 # create env
-conda create -n ${env_name} python=2.7
+conda create -y -n ${env_name} python=2.7
 # activate env
 source activate ${env_name}
 
