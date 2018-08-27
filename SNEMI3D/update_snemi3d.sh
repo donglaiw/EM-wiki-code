@@ -21,15 +21,19 @@ source activate ${env_name}
 # 3.1 for data pre-processing
 cd ${folder_name}/EM-preprocess
 git pull
+python setup.py install
 
 # 3.2 for affinity prediction [TODO]
 # 3.3 for segmentation
 cd ${folder_name}/zwatershed
 git pull
+python setup.py install
 
 cd ${folder_name}/waterz
 git pull
+python setup.py install
 
 # 3.4 for evaluation
 cd ${folder_name}/EM-segLib
 git pull
+python setup.py install
