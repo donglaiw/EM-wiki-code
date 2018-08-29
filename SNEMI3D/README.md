@@ -18,6 +18,9 @@
 (not ready yet, download affinity for [SNEMI-train](http://140.247.107.75/rhoana_product/snemi/aff/model_snemi_dice_mls._train_min.h5))
 
 ### 2.3. Segmentation and Evaluation
+- METHOD_ID: 0=zwatershed, 1=waterz, 2=zwatershed+waterz
+- DO_TRAIN: 0=train, 1=test
+- SAVE_SEG: 0=no save
 ```
 python do_snemi3d.py METHOD_ID DO_TRAIN SAVE_SEG
 ```
