@@ -15,9 +15,10 @@ cur_path=`pwd`
 
 # 2. setup environment
 # create env
-conda create -n ${env_name} python=2.7 cython numpy
+conda create -n ${env_name} python=2.7 cython numpy boost h5py
 # activate env
 source activate ${env_name}
+conda install -c conda-forge mahotas tifffile
 
 # 3. setup github repo
 if [ ! -d ${folder_name} ];then

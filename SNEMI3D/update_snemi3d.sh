@@ -18,22 +18,26 @@ cur_path=`pwd`
 source activate ${env_name}
 
 # 3. update github repo
+cd ${folder_name}
 # 3.1 for data pre-processing
-cd ${folder_name}/EM-preprocess
+cd EM-preprocess
 git pull
 python setup.py install
+cd ..
 
 # 3.2 for affinity prediction [TODO]
 # 3.3 for segmentation
-cd ${folder_name}/zwatershed
+cd zwatershed
 git pull
 python setup.py install
-
-cd ${folder_name}/waterz
+cd ..
+cd waterz
 git pull
 python setup.py install
+cd ..
 
 # 3.4 for evaluation
-cd ${folder_name}/EM-segLib
+cd EM-segLib
 git pull
 python setup.py install
+cd ..
