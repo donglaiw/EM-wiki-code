@@ -11,11 +11,10 @@ chmod +x ./install_snemi3d.sh
 ```
 
 - Download data: 
-    
-    - train: [image](http://140.247.107.75/rhoana_product/snemi/image/train-input.tif), [affinity](http://140.247.107.75/rhoana_product/snemi/aff/model_snemi_dice_mls._train_min.h5), [gt segmentation](http://140.247.107.75/rhoana_product/snemi/seg/train-label.tif)
-    
-    - test: [image](http://140.247.107.75/rhoana_product/snemi/image/test-input.tif), [affinity]()
-
+```
+chmod +x ./install_snemi3d.sh
+./download_data.sh
+```
 
 ## 2. Pipeline
 ### 2.1 Image Deflickering
@@ -24,7 +23,7 @@ python do_snemi3d.py 1 train-data.tiff train-data-df.tiff
 ```
 
 ### 2.2. Affinity Prediction 
-(not ready yet, download affinity for [SNEMI-train](), [SNEMI-test]())
+(not ready yet, download affinity for [SNEMI-train](http://140.247.107.75/rhoana_product/snemi/aff/model_snemi_dice_mls._train_min.h5))
 
 ### 2.3. 2D Segmentation
 ```
