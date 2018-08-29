@@ -4,17 +4,11 @@
 
 - Install Minicoda [python 2.7](https://conda.io/miniconda.html)
 
-- Install github repos
-```
-chmod +x ./install_snemi3d.sh
-./install_snemi3d.sh
-```
+- Change script permission: `chmod +x *.sh`
 
-- Download data: 
-```
-chmod +x ./install_snemi3d.sh
-./download_data.sh
-```
+- Install github repos: `./install_snemi3d.sh`
+
+- Download data: `./download_data.sh`
 
 ## 2. Pipeline
 ### 2.1 Image Deflickering
