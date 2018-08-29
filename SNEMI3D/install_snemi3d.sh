@@ -5,13 +5,14 @@
 # 1. get input
 env_name=vcg_snemi
 folder_name=./vcg_snemi
+
 if [ ! -z ${1} ];then
     env_name=${1}
 fi
 if [ ! -z ${2} ];then
     folder_name=${2}
 fi
-cur_path=`pwd`
+cur_path='pwd'
 
 # 2. setup environment
 # create env
@@ -26,7 +27,7 @@ if [ ! -d ${folder_name} ];then
 fi
 cd ${folder_name}
 # 3.1 for data pre-processing
-git clone git@github.com:donglaiw/EM-preprocess.git
+git clone https://github.com/donglaiw/EM-preprocess/
 cd EM-preprocess
 conda env update -f requirements.txt
 python setup.py install
@@ -34,18 +35,18 @@ cd ..
 
 # 3.2 for affinity prediction [TODO]
 # 3.3 for segmentation
-git clone git@github.com:donglaiw/zwatershed.git
+git clone https://github.com/donglaiw/zwatershed
 cd zwatershed
 conda env update -f requirements.txt
 python setup.py install
 cd ..
-git clone git@github.com:donglaiw/waterz.git
+git clone https://github.com/donglaiw/waterz
 cd waterz
 conda env update -f requirements.txt
 python setup.py install
 cd ..
 # 3.4 for evaluation
-git clone git@github.com:donglaiw/EM-segLib.git
+git clone https://github.com/donglaiw/EM-segLib
 cd EM-segLib
 conda env update -f requirements.txt
 python setup.py install
