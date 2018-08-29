@@ -12,27 +12,12 @@
 
 ## 2. Pipeline
 ### 2.1 Image Deflickering
-```
-python do_snemi3d.py 1 train-data.tiff train-data-df.tiff
-```
+(not ready yet)
 
 ### 2.2. Affinity Prediction 
 (not ready yet, download affinity for [SNEMI-train](http://140.247.107.75/rhoana_product/snemi/aff/model_snemi_dice_mls._train_min.h5))
 
-### 2.3. 2D Segmentation
+### 2.3. Segmentation and Evaluation
 ```
-python do_snemi3d.py 1 INPUT_IMAGE_STACK DEFLICKER_IMAGE_STACK
+python do_snemi3d.py METHOD_ID DO_TRAIN SAVE_SEG
 ```
-
-### 2.4. 3D Linking
-```
-python do_snemi3d.py 1 INPUT_IMAGE_STACK DEFLICKER_IMAGE_STACK
-```
-
-### 2.5. post-processing
-```
-python do_snemi3d.py 1 INPUT_IMAGE_STACK DEFLICKER_IMAGE_STACK
-```
-
-
-## 3. Evaluation
