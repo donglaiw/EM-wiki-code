@@ -4,40 +4,23 @@
 
 - Install Minicoda [python 2.7](https://conda.io/miniconda.html)
 
-- Install github repos
-```
-chmod +x ./install_snemi3d.sh
-./install_snemi3d.sh
-```
+- Change script permission: `chmod +x *.sh`
 
-- Download data: 
-    = train: [image](http://140.247.107.75/rhoana_product/snemi/image/train-input.tif), [affinity](http://140.247.107.75/rhoana_product/snemi/aff/model_snemi_dice_mls._train_min.h5), [gt segmentation](http://140.247.107.75/rhoana_product/snemi/seg/train-label.tif)
-    = test: [image](http://140.247.107.75/rhoana_product/snemi/image/test-input.tif), [affinity]()
+- Install github repos: `./install_snemi3d.sh`
 
+- Download data: `./download_data.sh`
 
 ## 2. Pipeline
 ### 2.1 Image Deflickering
-```
-python do_snemi3d.py 1 train-data.tiff train-data-df.tiff
-```
+(not ready yet)
 
 ### 2.2. Affinity Prediction 
-(not ready yet, download affinity for [SNEMI-train](), [SNEMI-test]())
+(not ready yet, download affinity for [SNEMI-train](http://140.247.107.75/rhoana_product/snemi/aff/model_snemi_dice_mls._train_min.h5))
 
-### 2.3. 2D Segmentation
+### 2.3. Segmentation and Evaluation
+- METHOD_ID: 0=zwatershed, 1=waterz, 2=zwatershed+waterz
+- DO_TRAIN: 0=train, 1=test
+- SAVE_SEG: 0=no save
 ```
-python do_snemi3d.py 1 INPUT_IMAGE_STACK DEFLICKER_IMAGE_STACK
+python do_snemi3d.py METHOD_ID DO_TRAIN SAVE_SEG
 ```
-
-### 2.4. 3D Linking
-```
-python do_snemi3d.py 1 INPUT_IMAGE_STACK DEFLICKER_IMAGE_STACK
-```
-
-### 2.5. post-processing
-```
-python do_snemi3d.py 1 INPUT_IMAGE_STACK DEFLICKER_IMAGE_STACK
-```
-
-
-## 3. Evaluation
