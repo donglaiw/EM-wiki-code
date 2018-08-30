@@ -36,18 +36,22 @@ cd ..
 # 3.2 for affinity prediction [TODO]
 # 3.3 for segmentation
 git clone https://github.com/donglaiw/zwatershed
-cd zwatershed
-conda env update -f requirements.txt
-python setup.py install
-cd ..
+# cd zwatershed
+pip install -e ./zwatershed
+#conda env update -f requirements.txt
+# python setup.py install
+# cd ..
 git clone https://github.com/donglaiw/waterz
-cd waterz
-conda env update -f requirements.txt
-python setup.py install
-cd ..
+# cd waterz
+pip install -e ./waterz
+# conda env update -f requirements.txt
+# python setup.py install
+# cd ..
 # 3.4 for evaluation
 git clone https://github.com/donglaiw/EM-segLib
-cd EM-segLib
-conda env update -f requirements.txt
-python setup.py install
-cd ..
+# cd EM-segLib
+pip install -e ./EM-segLib
+# conda env update -f requirements.txt
+# python setup.py install
+# cd ..
+echo "Installation complete!"
